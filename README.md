@@ -1,47 +1,56 @@
-# PyPuzzle Lite - Python 代码拼图
+<div align="center">
 
-`PyPuzzle Lite` 是一个纯前端的 Python 入门练习小游戏。  
-玩家需要把被打乱顺序的代码行拖回正确位置，通过“拼图”方式熟悉 Python 的执行顺序与语法结构。
+# PyPuzzle Lite
+### Python 代码拼图闯关
 
-## 功能亮点
+![Platform](https://img.shields.io/badge/Platform-Web-0ea5e9?style=flat-square)
+![Tech](https://img.shields.io/badge/Tech-Vanilla%20JavaScript-f59e0b?style=flat-square)
+![Stars](https://img.shields.io/github/stars/dawdaw1111/python-code-puzzle?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/dawdaw1111/python-code-puzzle?style=flat-square)
 
-- 20 道闯关题，覆盖 `输入输出`、`变量计算`、`判断`、`循环`
-- 代码行拖拽排序，提交后即时判断对错
-- 错题记录与回看
-- 学习统计（完成题数、连胜、分类进度）
-- 自动保存进度（`localStorage`）
+</div>
+
+把打乱顺序的 Python 代码行拖回正确位置，用游戏化方式练执行顺序、缩进和语法结构。
+
+![PyPuzzle Preview](./docs/preview.png)
+
+## 项目亮点
+
+- 20 道练习题，覆盖输入输出、变量、判断、循环
+- 拖拽排序 + 即时判题反馈
+- 错题记录、分类进度、连胜统计
+- 自动保存学习状态（`localStorage`）
+- 纯前端实现，双击即可运行
 
 ## 快速开始
 
-1. 进入项目目录
-2. 直接用浏览器打开 `index.html`
+1. 克隆仓库或下载源码
+2. 直接打开 `index.html`
 
-也可以在目录中启动一个本地静态服务后访问：
+也可以用本地静态服务启动：
 
 ```bash
 python -m http.server 8000
 ```
 
-然后打开：`http://127.0.0.1:8000`
+浏览器访问 `http://127.0.0.1:8000`
 
-## 项目结构
+## 目录结构
 
-- `index.html`：页面结构
-- `style.css`：界面样式
-- `data.js`：题库与分类数据
-- `puzzle.js`：拼图核心逻辑（打乱、移动、校验）
-- `storage.js`：本地存档逻辑
-- `app.js`：页面渲染与交互控制
+```text
+.
+├─ index.html       # 页面结构
+├─ style.css        # 样式
+├─ data.js          # 题库与分类数据
+├─ puzzle.js        # 拼图引擎（打乱、移动、校验）
+├─ storage.js       # 本地存档
+├─ app.js           # 页面交互与状态管理
+└─ docs/preview.png # README 预览图
+```
 
-## 技术栈
-
-- HTML5
-- CSS3
-- Vanilla JavaScript（无框架）
-
-## 适用人群
+## 适合谁
 
 - Python 初学者
-- 需要课堂互动练习的培训场景
-- 想用游戏化方式巩固基础语法的学习者
+- 培训班/课堂互动练习
+- 想用小游戏巩固基础语法的学习者
 
